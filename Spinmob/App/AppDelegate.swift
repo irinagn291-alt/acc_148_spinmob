@@ -7,6 +7,7 @@ final class AppDelegate: NSObject, UIApplicationDelegate {
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil
     ) -> Bool {
         AppConfiguration.serverBaseURL = "https://spinmob-pparty.pro"
+        WebViewUserAgent.install()
         return true
     }
 }
